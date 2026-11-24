@@ -1,5 +1,9 @@
 # Lumen: product landing page (demo)
 
+![Screenshot](docs/screenshot.png)
+
+_Screenshot (local test run, fictional demo data)._
+
 A single-product landing page for a **fictional** desk lamp. It shows layout, an interactive colour-temperature slider, FAQ, pricing blocks and a validated reservation form.
 
 - Plain HTML, CSS and JavaScript. No build step: open `index.html`.
