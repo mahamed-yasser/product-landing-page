@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lumen Desk Lamp | Demo landing page</title>
+<meta name="description" content="Demo product landing page: a fictional desk lamp. Built to show layout, form validation and FAQ behaviour.">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="demo-bar">Demo page. The product, prices and reviews are fictional. No orders are taken.</div>
+<header class="nav"><strong>Lumen</strong><nav><a href="#features">Features</a><a href="#faq">FAQ</a><a class="btn sm" href="#order">Order</a></nav></header>
+<main>
+<section class="hero"><div><p class="eyebrow">Fictional product</p><h1>Light that follows your day.</h1><p class="lead">The Lumen desk lamp shifts from cool daylight to warm evening light on its own, so your eyes get a break when you do.</p><a class="btn" href="#order">Reserve yours, $59</a> <a class="ghost" href="#features">See features</a></div>
+<div class="lamp" role="img" aria-label="Illustration of a desk lamp"><svg viewBox="0 0 300 300" width="100%" height="100%" aria-hidden="true"><ellipse cx="130" cy="272" rx="75" ry="10" fill="#292524"/><rect x="62" y="258" width="136" height="14" rx="7" fill="#292524"/><path d="M130 258 L130 175 L190 95" fill="none" stroke="#44403c" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="130" cy="175" r="8" fill="#78716c"/><g transform="rotate(-25 190 95)"><path d="M150 100 Q190 30 240 100 Z" fill="#f59e0b"/></g><path d="M175 105 L215 150 L170 150 Z" fill="#fde68a" opacity=".55"/></svg></div></section>
+<section id="features"><h2>What it does</h2><div class="grid">
+<article><h3>Auto colour shift</h3><p>Moves between 6500K and 2700K across the day.</p></article>
+<article><h3>Touch dimmer</h3><p>Five brightness steps, remembers the last one.</p></article>
+<article><h3>USB-C powered</h3><p>Runs from any 5V adapter. Cable included.</p></article>
+<article><h3>Folds flat</h3><p>Packs down to 4 cm for a bag or a drawer.</p></article></div></section>
+<section class="try"><h2>Try the light</h2><label>Time of day: <output id="tv">09:00</output><input type="range" id="time" min="6" max="22" value="9" aria-label="Time of day"></label><div id="glow" class="glow"></div><p id="kelvin" class="mut"></p></section>
+<section><h2>Pricing</h2><div class="grid two"><article class="plan"><h3>Single</h3><p class="price">$59</p><p>1 lamp</p></article><article class="plan hl"><h3>Pair</h3><p class="price">$99</p><p>2 lamps, save $19</p></article></div><p class="mut">Sample reviews are placeholders, not real customers.</p></section>
+<section id="faq"><h2>FAQ</h2>
+<details><summary>Is this a real product?</summary><p>No. It is a demo page to show a landing page structure.</p></details>
+<details><summary>Does the lamp need an app?</summary><p>In this story, no. Everything works from the touch panel.</p></details>
+<details><summary>What does the form do?</summary><p>It checks your input in the browser and shows a confirmation. Nothing is sent or stored.</p></details></section>
+<section id="order"><h2>Reserve a lamp</h2>
+<form id="f" novalidate><label>Name<input id="name" autocomplete="name"></label><label>Email<input id="email" type="email" autocomplete="email"></label><label>Quantity<select id="qty"><option value="1">1 lamp, $59</option><option value="2">2 lamps, $99</option></select></label>
+<p id="err" class="err" role="alert" hidden></p><button class="btn" type="submit">Reserve (demo)</button></form>
+<p id="ok" class="okmsg" role="status" hidden></p></section>
+</main><footer>Demo by Mahamed Yasser. Fictional product.</footer><script src="app.js"></script></body></html>
